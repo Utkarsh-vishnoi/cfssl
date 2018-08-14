@@ -16,6 +16,6 @@ ADD files/ /opt/cfssl/
 
 ADD cfssl.sh /
 
-RUN chmod +x cfssl.sh
+RUN chmod +x /cfssl.sh
 
-CMD ["/cfssl.sh"]
+ENTRYPOINT["/cfssl.sh"]
