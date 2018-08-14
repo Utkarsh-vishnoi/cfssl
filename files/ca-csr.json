@@ -1,0 +1,14 @@
+{
+ "CN": "docker.ee",
+ "key": {
+ "algo": "rsa",
+ "size": 4096
+ },
+ "names": [
+ {
+ "C": "IN",
+ "L": "Jaspur",
+ "OU": "ACME Operations"
+ }
+ ]
+}

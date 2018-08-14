@@ -1,0 +1,14 @@
+{
+    "CN": "OCSP CA",
+    "key": {
+        "algo": "rsa",
+        "size": 4096
+    },
+    "names": [
+        {
+            "C": "IN",
+            "L": "Jaspur",
+            "OU": "OCSP operations"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:
+    cfssl:
+        build: ./
+        restart: unless-stopped
+        ports:
+            - 8888:8888
+        volumes:
+            - /certs:/certs
