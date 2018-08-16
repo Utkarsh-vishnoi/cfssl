@@ -8,7 +8,7 @@ RUN go get -u bitbucket.org/liamstask/goose/cmd/goose
 
 RUN goose -path $GOPATH/src/github.com/cloudflare/cfssl/certdb/sqlite -env production up
 
-RUN mv certstore_production.db certs.db
+RUN mv certstore_production.db /etc/cfssl/certs.db
 
 EXPOSE 8888
 
@@ -18,4 +18,4 @@ ADD cfssl.sh /
 
 RUN chmod +x /cfssl.sh
 
-ENTRYPOINT["/cfssl.sh"]
+ENTRYPOINT ["/cfssl.sh"]
